@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Piano Arcade</title>
+
+        <link rel="stylesheet" href="assets/stylesheet/normalize.css">
+        <link rel="stylesheet" href="assets/stylesheet/app.css">
+
+    </head>
+    
+    <body>
+        <div id="fullscreen" class="vertical-align text-border">
+            <div id="main-menu" class="fullscreen-content">
+                <div>PIANO ARCADE</div>
+                <div style="font-size: 50px;">
+                    <a href="#" style="margin-right: 30px" id="play">JOGAR</a> 
+                    <a href="#" id="dificuldade">Facil</a>
+                </div>
+            </div>
+
+            <div id="game-over" class="fullscreen-content">
+                <div>GAME OVER!</div>
+                <div style="font-size: 50px;">Pontos: <span id="pontos">0</span></div>
+                <div style="font-size: 50px;">Highscore: <span id="maior">0</span></div>
+                <div style="font-size: 50px;" id="new-highscore">NOVO HIGHSCORE!</div>
+                <div style="font-size: 50px;"><a href="#" id="restart">Jogar novamente</a></div>
+            </div>
+
+            <span id="time" class="fullscreen-content">3</span>
+        </div>
+
+        <div id="page" class="blur">
+            <div id="container">
+                <div class="left vertical-align">
+                    <div class="content">
+                        <h1 class="title">Piano Arcade</h1>
+                        <hr>
+                        <h1>Vidas: <span id="life-container"></span></h1>
+                        <h1 id="score">Pontos: 0</h1>
+                        <h1 id="highscore">Highscore: 0</h1>
+                        <h1 id="difficulty">Dificuldade: Facil</h1>
+                    </div>
+                    <br>
+                    <div class="content" id="notas">
+                        <h1 class="title">Notas</h1>
+                        <hr>
+                        <h1>Jogo desenvolvido por <b>Guilherme Girao</b> e <b>Janaina Davila</b> para o trabalho de <b>JavaScript</b>.</h1>
+                    </div>
+                </div>
+                <div class="right vertical-align">
+                    <div id="game-screen"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="assets/javascript/app.js"></script>
+        <script id="remove">imports.load();</script>
+
+        <script>
+            Game.boot ();
+
+            $('#play').click (function () {
+                $('#game-over').hide ();
+                $('#main-menu').hide (300);
+                $('#time').show(300);
+
+                Game.startTIMER ();
+            });
+
+            $('#dificuldade').click (function () {
+                let dif = Math.floor (Game.difficulty);
+                
+                if ( dif >= 2 ) {
+                    dif = -1;
+                }
+
+                localStorage.setItem ('difficulty', dif + 1);
+                Game.difficultyLIST ();
+            });
+
+            $('#restart').click (function () {
+                window.location.reload ();
+            });
+        </script>
+    
+    </body>
+</html>

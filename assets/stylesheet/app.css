@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Arcade;
+    src: url('../font/arcade.TTF');
+}
+
+:root {
+    --primary-color: #4A148C;
+}
+
+* {
+    margin: 0 auto;
+}
+
+body {
+    background: var(--primary-color);
+    color: #fff;
+    font-family: Arcade;
+    width: 100%;
+}
+
+hr {
+    background-color: var(--primary-color);
+    border: 0;
+    height: 1px;
+    opacity: .5;
+}
+
+/* Containers */
+#container {
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+
+#container .left {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+#container .right {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+
+/* Content */
+.content {
+    background: #F1F1FF;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #232621;
+    color: var(--primary-color);
+    padding: 20px 30px;
+    text-align: justify;
+    width: 70%;
+}
+
+.content .title {
+    font-size: 40px;
+}
+
+.content h1 {
+    margin: 0;
+}
+
+.content hr {
+    margin-bottom: 10px;
+}
+
+/* Fullscreen Alert */
+#fullscreen {
+    color: var(--primary-color);
+    font-size: 100px;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    width: 100vw;
+    z-index: 1000;
+}
+
+#fullscreen .fullscreen-content {
+    background: #fafafa; 
+    border-radius: 5px;
+    box-shadow: 0px 1px 7px #232621;
+    padding: 20px; 
+}
+
+#fullscreen #time {
+    display: none;
+}
+
+#page.blur {
+    filter: blur(5px);
+}
+
+#game-over, #new-highscore {
+    display: none;
+}
+
+/* Game Screen */
+#game-screen {
+    background: #FFF;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px #232621;
+    height: 80vh;
+    margin: 40px;
+    overflow: hidden;
+    width: 80%;
+}
+
+#game-screen .tile {
+    background: #FFF;
+    box-shadow: 1px 1px 3px #232621;
+    cursor: pointer;
+    float: left;
+    height: 25%; 
+    width: 25%;
+}
+
+#game-screen .tile.selected {
+    background: #000;
+}
+
+#game-screen .tile.error {
+    background: #DD1D25!important;
+}
+
+#game-screen .tile.clicked {
+    background: #0f0f0f;
+}
+
+/* Life Container */
+#life-container {
+    height: 43px;
+}
+
+#life-container img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 45px;
+}
+
+#life-container .lost {
+    filter: grayscale(100%);
+}
+
+/* Utilitários */
+.color-primary {
+    color: var(--primary-color);
+}
+
+.vertical-align {
+    align-items: center;
+    display: flex;
+}
+
+.text-border {
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* Media Queries */
+@media screen and (max-width: 850px) {
+
+    #container .left { 
+        display: block;
+        width: 100%;
+    }
+
+    #container .right {
+        display: block;
+        width: 100%;
+    }
+
+    #game-screen {
+        margin: 0 auto;
+        height: 61vh;
+        width: 97%;
+    }
+
+    #notas {
+        display: none;
+    }
+
+    .content {
+        width: 83%;
+    }
+
+}
