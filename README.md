@@ -5,7 +5,9 @@ Um jogo que mistura Piano com Arcade, para o trabalho de JavaScript.
 https://pianoarcade.000webhostapp.com/
 
 ## Imagens
-*Insirir mais tarde*
+![Tela Inicial](https://i.imgur.com/Z0e1Sxm.png)
+![Jogo](https://i.imgur.com/1N2QI9B.png)
+![Game Over](https://i.imgur.com/LoclBP8.png)
 
 ## Desenvolvimento
 * Tempo de desenvolvimento do projeto: Cerca de 5 à 6 horas;
