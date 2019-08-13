@@ -2,7 +2,7 @@
 Um jogo que mistura Piano com Arcade, para o trabalho de JavaScript.
 
 ## Website
-https://pianoarcade.000webhostapp.com/
+https://guilhermegirao.github.io/piano-arcade
 
 ## Imagens
 ![Tela Inicial](https://i.imgur.com/Z0e1Sxm.png)
