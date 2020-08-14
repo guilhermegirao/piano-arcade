@@ -17,14 +17,13 @@ https://guilhermegirao.github.io/piano-arcade
 * [jQuery](https://jquery.com/) - Web Framework Utilizado
 * [Timer.js](https://husa.github.io/timer.js/) - Timer.js para criar o temporizador
 
-## Versão
-1.0
+## Versão: 1.0
 
 ## Autores
-* **Guilherme Girão Alves**
+* [Guilherme Girão Alves](github.com/guilhermegirao)
 * **Janaína Dávilla da Silva Oliveira**
 
 ## Agradecimentos
 * Insipiração: Piano Tiles e jogos de Arcade
 * À dupla: Janaína Dávilla
-* Ao professor: [Dalker Pinheiro](http://dalkerpinheiro.com.br)
+* Ao professor: Dalker Pinheiro
