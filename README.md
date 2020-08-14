@@ -20,7 +20,7 @@ https://guilhermegirao.github.io/piano-arcade
 ## Versão: 1.0
 
 ## Autores
-* [Guilherme Girão Alves](github.com/guilhermegirao)
+- [Guilherme Girão](https://github.com/guilhermegirao)
 * **Janaína Dávilla da Silva Oliveira**
 
 ## Agradecimentos
